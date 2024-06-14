@@ -1,0 +1,63 @@
+.tile {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(255, 165, 0, 0.8),
+    rgba(255, 215, 0, 0.5)
+  );
+  padding: 20px;
+  box-sizing: border-box;
+  transition: opacity 0.5s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.tile:hover .overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay:hover {
+  text-decoration: underline;
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.text {
+  color: #fff;
+}
+
+.text strong {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 1rem;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 3em;
+  white-space: nowrap;
+}

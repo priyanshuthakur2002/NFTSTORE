@@ -1,0 +1,128 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(90deg, #00cffd 0%, #b57edc 100%);
+}
+
+.innerContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.content {
+  background-color: #eee;
+  max-width: 1500px;
+  margin: 0 auto 90px auto;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-right: 10px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 10px 16px 5px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.stat {
+  color: #e67e22;
+  width: 100%;
+}
+
+.stat .label {
+  font-size: 26px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.value {
+  font-size: 24px;
+  word-wrap: anywhere;
+}
+
+.nftSection {
+  margin-top: 20px;
+}
+
+.nftGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.notConnected {
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  margin: 0 auto 90px auto;
+}
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  width: 640px;
+  padding: 20px 0;
+  background-color: #ff6f61;
+  color: #fff;
+  transition: all 0.3s;
+  margin-top: 16px;
+}
+
+.Btn:hover {
+  background-color: #e65c50;
+}
+
+.msg {
+  color: red;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+
+.msgAlert {
+  color: green;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  display: inline-block;
+  border: 4px solid #aaa;
+  border-left-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+}
